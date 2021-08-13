@@ -1,0 +1,37 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+p {
+  font-family: Lucida Console, Monaco;
+  font-size: 13px;
+}
+
+.link {
+ color: black;
+ font-family: Lucida Console, Monaco;
+ font-size: 13px;
+}
+
+.fonts {
+  font-family: Lucida Console, Monaco;
+  font-size: 13px;
+}
+
+.blog {
+  text-align: center;
+}
+
+.title {
+  font-family: Lucida Console, Monaco;
+  font-size: 20px;
+}
+
+.info {
+  color: grey
+  font-family: system-ui;
+  font-size: 12px;
+}
