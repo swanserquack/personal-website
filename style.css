@@ -31,7 +31,7 @@ p {
 }
 
 .info {
-  color: grey
+  color: grey;
   font-family: system-ui;
   font-size: 12px;
 }
