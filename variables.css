@@ -18,7 +18,6 @@
   --section-background:rgba(25, 25, 25, 0.4);
 }
 
-
 *, *:after, *:before {
 	box-sizing:border-box;
 }
@@ -34,7 +33,6 @@ main > section > header h1 {
   position:relative;
   display:flex;
   overflow:auto;
-
   color:var(--font-color);
   background-color:var(--bg-color);
 }
@@ -63,6 +61,7 @@ main > section > header h1 {
   color:var(--title-color);
 }
 
+/* The properties for the button*/
 .nightDayLabel {
   position:relative;
   display:block;
