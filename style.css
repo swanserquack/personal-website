@@ -1,3 +1,15 @@
+:root {
+  --color-bg: #fff;
+}
+
+html.dark {
+  --color-bg: #000;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
 .center {
   position: absolute;
   width: 250px;
