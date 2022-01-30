@@ -1,13 +1,24 @@
 :root {
   --color-bg: #fff;
+  --color: #000;
+  --link-color: #000;
+  transition: all 1s ease;
 }
 
 html.dark {
   --color-bg: #000;
+  --color: #fff;
+  --link-color: #fff;
+  transition: all 1s ease;
 }
 
-body {
+html {
   background-color: var(--color-bg);
+  color: var(--color);
+}
+
+#Main a{
+  color: var(--link-color)
 }
 
 .center {

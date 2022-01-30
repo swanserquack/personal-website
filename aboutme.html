@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<div id="fauxBody">
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,7 +11,6 @@
     })
   )
 );
-
   document.documentElement.classList.toggle(
     'dark',
     localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
@@ -20,7 +18,7 @@
 </script>
 <title>About Me</title>
 </head>
-<main class="fonts">
+<main class="fonts" id="Main">
 <a href="index.html"><u>Home</u></a>
 <br>
 <br>
