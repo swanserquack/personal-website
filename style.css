@@ -18,7 +18,9 @@ html {
 }
 
 #Main a{
-  color: var(--link-color)
+  color: var(--link-color);
+  font-family: Lucida Console, Monaco;
+  font-size: 13px;
 }
 
 .center {
@@ -34,12 +36,6 @@ html {
 p {
   font-family: Lucida Console, Monaco;
   font-size: 13px;
-}
-
-a {
- color: black;
- font-family: Lucida Console, Monaco;
- font-size: 13px;
 }
 
 .fonts {

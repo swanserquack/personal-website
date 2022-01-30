@@ -2,20 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', () =>
-  document.querySelectorAll('[toggle-dark-mode]').forEach((item) =>
-    item.addEventListener('click', () => {
-      localStorage.setItem('theme', localStorage.theme == 'dark' ? 'light' : 'dark');
-      document.documentElement.classList.toggle('dark');
-    })
-  )
-);
-  document.documentElement.classList.toggle(
-    'dark',
-    localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  );
-</script>
+<script type="text/javascript" src="darkmode.js"></script>
 <title>About Me</title>
 </head>
 <main class="fonts" id="Main">
