@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="darkmode.js"></script>
+<script src="https://kit.fontawesome.com/297fb57c58.js" crossorigin="anonymous"></script>
 <title>Home</title>
 </head>
 <main id="Main">
@@ -15,5 +17,7 @@
 <br><br>
 <a href="copyright.html" class="link">Copyright</a></p>
 </div>
+<button toggle-dark-mode id="darkmode" onclick="SwitchButtons('darkmode');"><em class="fas fa-moon"></em></button>
+<button toggle-dark-mode id="lightmode" onclick="SwitchButtons('lightmode');" style='display:none;'><em class="fas fa-sun"></em></button>
 </main>
 </html>
