@@ -20,8 +20,6 @@ function SwitchButtons(buttonId) {
     showBtn = 'darkmode';
     hideBtn = 'lightmode';
   }
-  document.getElementById(hideBtn).style.display = 'none'; //step 2 :additional feature hide button
-  document.getElementById(showBtn).style.display = ''; //step 3:additional feature show button
-
-
+  document.getElementById(hideBtn).style.display = 'none';
+  document.getElementById(showBtn).style.display = '';
 }
