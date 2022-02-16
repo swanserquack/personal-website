@@ -1,3 +1,5 @@
+var hideBtn, showBtn;
+
 document.addEventListener('DOMContentLoaded', () =>
 document.querySelectorAll('[toggle-dark-mode]').forEach((item) =>
   item.addEventListener('click', () => {
@@ -11,8 +13,21 @@ document.documentElement.classList.toggle(
   localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
 );
 
+if (localStorage.theme == 'dark') {
+  showBtn = 'lightmode';
+  hideBtn = 'darkmode';
+  document.getElementById(hideBtn).style.visibility = 'hidden';
+  document.getElementById(showBtn).style.visibility = 'visible';
+}
+
+if (localStorage.theme == 'light') {
+  showBtn = 'darkmode';
+  hideBtn = 'lightmode';
+  document.getElementById(hideBtn).style.visibility = 'hidden';
+  document.getElementById(showBtn).style.visibility = 'visible';
+}
+
 function SwitchButtons(buttonId) {
-  var hideBtn, showBtn;
   if (buttonId == 'darkmode') {
     showBtn = 'lightmode';
     hideBtn = 'darkmode';
@@ -20,6 +35,6 @@ function SwitchButtons(buttonId) {
     showBtn = 'darkmode';
     hideBtn = 'lightmode';
   }
-  document.getElementById(hideBtn).style.display = 'none';
-  document.getElementById(showBtn).style.display = '';
+  document.getElementById(hideBtn).style.visibility = 'hidden';
+  document.getElementById(showBtn).style.visibility = 'visible';
 }
