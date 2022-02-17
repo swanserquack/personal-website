@@ -13,6 +13,10 @@ document.documentElement.classList.toggle(
   localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
 );
 
+if (localStorage.getItem('theme') == null) {
+  localStorage.setItem('theme', 'light');
+}
+
 if (localStorage.theme == 'dark') {
   showBtn = 'lightmode';
   hideBtn = 'darkmode';
